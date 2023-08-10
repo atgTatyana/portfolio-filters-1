@@ -81,14 +81,12 @@ export const Portfolio = () => {
   }
 
   return (
-    <>
-      <div>
-        <Toolbar filters={["All", "Websites", "Flayers", "Business Cards"]}
-          selected={selected}
-          onSelectFilter={ handleSelectedFilter } />
-      </div>
+    <div className="container">
+      <Toolbar filters={["All", "Websites", "Flayers", "Business Cards"]}
+        selected={selected}
+        onSelectFilter={ handleSelectedFilter } />
       <ProjectList projects = { selected === 'All' ? projectsList :
         projectsList.filter(item => item.category === selected) } />
-    </>
+    </div>
   )
 }

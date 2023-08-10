@@ -1,6 +1,9 @@
 body {
     margin: 0 auto;
-    width: 1000px;
+}
+
+.container {
+    padding: 20px;
 }
 
 .selected-filter {
@@ -9,11 +12,14 @@ body {
 }
 
 button {
-    margin : 20px 10px 20px 0;
+    margin-right: 10px;
 }
 
 .projects {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    column-count: 3;
+}
+
+img {
+    margin-top: 15px;
+    width: 100%;
 }
